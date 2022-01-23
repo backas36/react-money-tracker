@@ -1,10 +1,14 @@
 import "./ExpenseItem.css";
+import ExpenseDate from "./ExpenseDate";
 const ExpenseItem = ({ expense }) => {
   const { date, title, amount } = expense;
+
   return (
     <>
       <div className="expense-item">
-        <div>{date.toLocaleDateString()}</div>
+        <div>
+          <ExpenseDate date={date} />
+        </div>
         <div className="expense-item__description">
           <h2>{title}</h2>
           <div className="expense-item__price">{amount}</div>
