@@ -23,7 +23,7 @@ function App() {
   ];
   return (
     <div>
-      <h2>Let's get started</h2>
+      <h2>Money Tracker</h2>
       <ExpenseItems expenses={expenses} />
     </div>
   );
